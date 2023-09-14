@@ -5,9 +5,9 @@ export default function SingleCourse({ courses }) {
             <div className="card p-4 space-y-3 bg-white rounded-2xl">
                 <img className="w-full" src={image} alt="" />
                 <h2 className="text-[#1C1B1B] text-base font-semibold">{title}</h2>
-                <p className="text-xs text-[#1c1b1b99]">{description}</p>
+                <p className="text-xs text-[#1c1b1b99] text-justify">{description}</p>
                 <div className="flex justify-between items-center">
-                    <div className="price text-xs text-[#1c1b1b99] flex gap-3">
+                    <div className="price text-xs font-medium text-[#1c1b1b99] flex gap-3">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
                                 <path d="M12 1V23" stroke="#1C1B1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -16,7 +16,7 @@ export default function SingleCourse({ courses }) {
                         </div>
                         <p>Price: {price}</p>
                     </div>
-                    <div className="credit text-xs text-[#1c1b1b99] flex gap-3">
+                    <div className="credit text-xs font-medium text-[#1c1b1b99] flex gap-3">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
                                 <path d="M12 6.042C10.3516 4.56336 8.2144 3.74694 6 3.75C4.948 3.75 3.938 3.93 3 4.262V18.512C3.96362 18.172 4.97816 17.9989 6 18C8.305 18 10.408 18.867 12 20.292M12 6.042C13.6483 4.56328 15.7856 3.74685 18 3.75C19.052 3.75 20.062 3.93 21 4.262V18.512C20.0364 18.172 19.0218 17.9989 18 18C15.7856 17.9969 13.6484 18.8134 12 20.292M12 6.042V20.292" stroke="#1C1B1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -25,6 +25,7 @@ export default function SingleCourse({ courses }) {
                         <p>Credit: {credit_hours}</p>
                     </div>
                 </div>
+                <button className="w-full py-2 bg-[#2F80ED] rounded-xl text-white">Select</button>
             </div>
         </div>
     )

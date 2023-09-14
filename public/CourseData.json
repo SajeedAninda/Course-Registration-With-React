@@ -3,7 +3,7 @@
         "id": 1,
         "title": "C Programming",
         "image": "https://i.imgur.com/jEt9pqk.png",
-        "description": "Learn the fundamentals of C programming language.",
+        "description": "Learn the basic of C programming. This course covers essential concepts and programming exercises to help you become proficient in C.",
         "price": 199.99,
         "credit_hours": 4
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "title": "Algorithms",
         "image": "https://i.imgur.com/AFdSovk.png",
-        "description": "Master algorithm design and analysis techniques.",
+        "description": "Master algorithm design and analysis techniques. This course provides in-depth knowledge of various algorithms and their applications.",
         "price": 249.99,
         "credit_hours": 3
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "title": "C++ for DSA",
         "image": "https://i.imgur.com/OSmvkMw.png",
-        "description": "Use C++ to implement data structures and algorithms.",
+        "description": "Use C++ to implement data structures and algorithms. This course combines C++ programming with data structure and algorithm theory.",
         "price": 219.99,
         "credit_hours": 4
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "title": "Basic Data Structures",
         "image": "https://i.imgur.com/wN0qgtL.png",
-        "description": "Explore foundational data structures like arrays and linked lists.",
+        "description": "Explore foundational data structures like arrays and linked lists. This course lays the groundwork for understanding more complex data structures.",
         "price": 179.99,
         "credit_hours": 3
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "title": "Intro to OOP Python",
         "image": "https://i.imgur.com/LBKGJ8U.png",
-        "description": "Get started with Object-Oriented Programming in Python.",
+        "description": "Get started with Object-Oriented Programming in Python. This course introduces you to OOP concepts and Python's implementation of them.",
         "price": 149.99,
         "credit_hours": 3
     },
@@ -43,7 +43,7 @@
         "id": 6,
         "title": "Software Engineering",
         "image": "https://i.imgur.com/EOKYOXT.png",
-        "description": "Learn software development processes and methodologies.",
+        "description": "Learn software development processes and methodologies. This comprehensive course covers the entire software engineering lifecycle.",
         "price": 299.99,
         "credit_hours": 5
     },
@@ -51,7 +51,7 @@
         "id": 7,
         "title": "AWS and Cloud Computing",
         "image": "https://i.imgur.com/ycihjwp.png",
-        "description": "Explore cloud computing with Amazon Web Services.",
+        "description": "Explore cloud computing with Amazon Web Services. This course provides hands-on experience with AWS services and cloud architecture.",
         "price": 199.99,
         "credit_hours": 4
     },
@@ -59,7 +59,7 @@
         "id": 8,
         "title": "Database (MySQL)",
         "image": "https://i.imgur.com/nmqymwJ.png",
-        "description": "Master MySQL database management and querying.",
+        "description": "Master MySQL database management and querying. This course covers SQL fundamentals and advanced database topics.",
         "price": 169.99,
         "credit_hours": 3
     },
@@ -67,7 +67,7 @@
         "id": 9,
         "title": "Problem Solving",
         "image": "https://i.imgur.com/WWFZf1F.png",
-        "description": "Enhance your problem-solving skills and critical thinking.",
+        "description": "Enhance your problem-solving skills and critical thinking. This course provides strategies and techniques for solving complex problems.",
         "price": 149.99,
         "credit_hours": 3
     }
