@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import AllCourses from './Components/AllCourses/AllCourses'
 import CourseCart from './Components/CourseCart/CourseCart'
+import toast, { Toaster } from "react-hot-toast";
 
 function App() {
   let [courseName, setCourseName] = useState([]);
@@ -17,7 +18,7 @@ function App() {
     let price = courses.price;
 
     if (ifCourseExists) {
-      return alert("Course Already Exists");
+      toast.error("This Course Already Exists")
     }
     else {
       courseName.forEach(credits => {
@@ -28,7 +29,7 @@ function App() {
       })
       let remainingCredits = 20 - creditHours;
       if (creditHours > 20) {
-        alert("Not enough credits")
+        toast.error("Not Enough Credits")
       }
       else {
         setTotalCreditHours(creditHours);
@@ -44,6 +45,7 @@ function App() {
   return (
     <div>
       <h1 className="text-[#1C1B1B] font-bold text-3xl my-8 text-center">Course Registration</h1>
+      <Toaster position="top-center" reverseOrder={false}></Toaster>
       <div className="flex flex-col-reverse md:flex-row w-[90%] mx-auto gap-5">
         <div className="w-full md:w-[75%] mb-4">
           <AllCourses handleSelectBtn={handleSelectBtn}></AllCourses>
