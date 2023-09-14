@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import SingleCourse from "../SingleCourse/SingleCourse";
 
 export default function AllCourses() {
-    let [AllCourses, setCourses] = useState([]);
+    let [courses, setCourses] = useState([]);
     useEffect(() => {
         fetch("./CourseData.json")
             .then(res => res.json())
@@ -10,8 +10,10 @@ export default function AllCourses() {
     }, [])
 
     return (
-        <div>
-            <SingleCourse></SingleCourse>
+        <div className=" grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {
+                courses.map((courses, idx) => <SingleCourse key={idx} courses={courses}></SingleCourse>)
+            }
         </div>
     )
 }

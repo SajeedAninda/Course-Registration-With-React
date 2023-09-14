@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <h1 className="text-[#1C1B1B] font-bold text-3xl my-6 text-center">Course Registration</h1>
+      <h1 className="text-[#1C1B1B] font-bold text-3xl my-8 text-center">Course Registration</h1>
       <AllCourses></AllCourses>
     </div>
   )
