@@ -1,9 +1,9 @@
 import CartDetails from "../CartDetails/CartDetails";
 
-export default function CourseCart({ courseName }) {
+export default function CourseCart({ courseName, totalCreditHours, remainingCreditHours }) {
     return (
         <div>
-            <CartDetails courseName={courseName}></CartDetails>
+            <CartDetails courseName={courseName} totalCreditHours={totalCreditHours} remainingCreditHours={remainingCreditHours}></CartDetails>
         </div>
     )
 }
