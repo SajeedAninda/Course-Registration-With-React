@@ -1,5 +1,4 @@
-export default function CartDetails({ courseName, totalCreditHours, remainingCreditHours }) {
-    console.log(totalCreditHours, remainingCreditHours)
+export default function CartDetails({ courseName, totalCreditHours, remainingCreditHours, coursePrice }) {
     return (
         <div>
             <div className="details p-4 bg-white rounded-2xl">
@@ -16,7 +15,7 @@ export default function CartDetails({ courseName, totalCreditHours, remainingCre
                     <h3 className="text-[#1c1b1b99] font-medium">Total Credit Hours: {totalCreditHours}</h3>
                 </div>
                 <div className="py-4">
-                    <h3 className="text-[#1c1b1b99] font-bold">Total Price : 48000 USD</h3>
+                    <h3 className="text-[#1c1b1b99] font-bold">Total Price : {coursePrice} USD</h3>
                 </div>
             </div>
         </div>

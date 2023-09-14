@@ -9,11 +9,12 @@ function App() {
   let [courseName, setCourseName] = useState([]);
   let [totalCreditHours, setTotalCreditHours] = useState(0);
   let [remainingCreditHours, setRemainingCreditHours] = useState(20);
+  let [coursePrice, setCoursePrice] = useState(0);
 
   let handleSelectBtn = (courses) => {
     let ifCourseExists = courseName.find(courseName => courseName.id === courses.id);
     let creditHours = courses.credit_hours;
-    console.log(creditHours);
+    let price = courses.price;
 
     if (ifCourseExists) {
       return alert("Course Already Exists");
@@ -22,6 +23,9 @@ function App() {
       courseName.forEach(credits => {
         creditHours = creditHours + credits.credit_hours;
       });
+      courseName.forEach(prices => {
+        price = price + prices.price;
+      })
       let remainingCredits = 20 - creditHours;
       if (creditHours > 20) {
         alert("Not enough credits")
@@ -29,6 +33,7 @@ function App() {
       else {
         setTotalCreditHours(creditHours);
         setRemainingCreditHours(remainingCredits);
+        setCoursePrice(price);
         let newCourseName = [...courseName, courses];
         setCourseName(newCourseName);
       }
@@ -44,7 +49,7 @@ function App() {
           <AllCourses handleSelectBtn={handleSelectBtn}></AllCourses>
         </div>
         <div className='w-full md:w-[25%] mb-4'>
-          <CourseCart courseName={courseName} totalCreditHours={totalCreditHours} remainingCreditHours={remainingCreditHours}></CourseCart>
+          <CourseCart courseName={courseName} totalCreditHours={totalCreditHours} remainingCreditHours={remainingCreditHours} coursePrice={coursePrice}></CourseCart>
         </div>
       </div>
     </div>
