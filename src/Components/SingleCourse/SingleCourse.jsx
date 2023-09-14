@@ -1,4 +1,4 @@
-export default function SingleCourse({ courses }) {
+export default function SingleCourse({ courses, handleSelectBtn }) {
     let { id, title, image, description, price, credit_hours } = courses;
     return (
         <div>
@@ -25,7 +25,7 @@ export default function SingleCourse({ courses }) {
                         <p>Credit: {credit_hours}</p>
                     </div>
                 </div>
-                <button className="w-full py-2 bg-[#2F80ED] rounded-xl text-white">Select</button>
+                <button onClick={()=>handleSelectBtn(courses)} className="w-full py-2 bg-[#2F80ED] rounded-xl text-white">Select</button>
             </div>
         </div>
     )

@@ -1,9 +1,9 @@
 import CartDetails from "../CartDetails/CartDetails";
 
-export default function CourseCart() {
+export default function CourseCart({ courseName }) {
     return (
         <div>
-            <CartDetails></CartDetails>
+            <CartDetails courseName={courseName}></CartDetails>
         </div>
     )
 }

@@ -6,16 +6,21 @@ import AllCourses from './Components/AllCourses/AllCourses'
 import CourseCart from './Components/CourseCart/CourseCart'
 
 function App() {
+  let [courseName, setCourseName] = useState([]);
+  let handleSelectBtn = (courses) => {
+    let newCourseName = [...courseName, courses];
+    setCourseName(newCourseName);
+  }
 
   return (
     <div>
       <h1 className="text-[#1C1B1B] font-bold text-3xl my-8 text-center">Course Registration</h1>
       <div className="flex w-[90%] mx-auto gap-5">
         <div className="w-[75%] mb-4">
-          <AllCourses></AllCourses>
+          <AllCourses handleSelectBtn={handleSelectBtn}></AllCourses>
         </div>
         <div className='w-[25%] mb-4'>
-          <CourseCart></CourseCart>
+          <CourseCart courseName={courseName}></CourseCart>
         </div>
       </div>
     </div>

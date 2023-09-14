@@ -1,4 +1,4 @@
-export default function CartDetails() {
+export default function CartDetails({ courseName }) {
     return (
         <div>
             <div className="details p-4 bg-white rounded-2xl">
@@ -8,8 +8,7 @@ export default function CartDetails() {
                 <div className="py-4 border-b border-gray-300">
                     <h2 className="text-[#1C1B1B] text-lg font-bold pb-2">Course Name</h2>
                     <ol className="text-[#1c1b1b99] list-decimal ml-5">
-                        <li>Hi</li>
-                        <li>Hello</li>
+                        {courseName.map(coursesList => <li>{coursesList.title}</li>)}
                     </ol>
                 </div>
                 <div className="py-4 border-b border-gray-300">
