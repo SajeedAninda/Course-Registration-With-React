@@ -1,7 +1,7 @@
 import { FiDollarSign } from 'react-icons/fi';
 import { HiOutlineBookOpen } from 'react-icons/hi';
 export default function SingleCourse({ courses, handleSelectBtn }) {
-    let { id, title, image, description, price, credit_hours } = courses;
+    let {title, image, description, price, credit_hours } = courses;
     return (
         <div>
             <div className="card p-4 space-y-3 bg-white rounded-2xl">

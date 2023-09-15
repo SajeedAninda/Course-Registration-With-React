@@ -47,10 +47,10 @@ function App() {
       <h1 className="text-[#1C1B1B] font-bold text-3xl my-8 text-center">Course Registration</h1>
       <Toaster position="top-center" reverseOrder={false}></Toaster>
       <div className="flex flex-col-reverse md:flex-row w-[90%] mx-auto gap-5">
-        <div className="w-full md:w-[75%] mb-4">
+        <div className="w-full md:w-[65%] lg:w-[75%] mb-4">
           <AllCourses handleSelectBtn={handleSelectBtn}></AllCourses>
         </div>
-        <div className='w-full md:w-[25%] mb-4'>
+        <div className='w-full md:w-[35%] lg:w-[25%] mb-4'>
           <CourseCart courseName={courseName} totalCreditHours={totalCreditHours} remainingCreditHours={remainingCreditHours} coursePrice={coursePrice}></CourseCart>
         </div>
       </div>
