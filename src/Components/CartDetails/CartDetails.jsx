@@ -7,7 +7,7 @@ export default function CartDetails({ courseName, totalCreditHours, remainingCre
                 </div>
                 <div className="py-4 border-b border-gray-300">
                     <h2 className="text-[#1C1B1B] text-lg font-bold pb-2">Course Name</h2>
-                    <ol className="text-[#1c1b1b99] list-decimal ml-5">
+                    <ol className="text-[#1c1b1b99] list-decimal list-inside">
                         {courseName.map((coursesList, idx) => <li key={idx}>{coursesList.title}</li>)}
                     </ol>
                 </div>

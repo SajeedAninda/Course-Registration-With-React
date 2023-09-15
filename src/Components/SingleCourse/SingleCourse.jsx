@@ -11,18 +11,18 @@ export default function SingleCourse({ courses, handleSelectBtn }) {
                 <div className="flex justify-between items-center">
                     <div className="price text-xs font-medium text-[#1c1b1b99] flex items-center gap-2">
                         <div className="text-lg text-[#1C1B1B]">
-                        <FiDollarSign></FiDollarSign>
+                            <FiDollarSign></FiDollarSign>
                         </div>
                         <p className="text-sm">Price: {price}</p>
                     </div>
                     <div className="credit text-xs font-medium text-[#1c1b1b99] flex items-center gap-2">
                         <div className="text-xl text-[#1C1B1B]">
-                        <HiOutlineBookOpen></HiOutlineBookOpen>
+                            <HiOutlineBookOpen></HiOutlineBookOpen>
                         </div>
                         <p className="text-sm">Credit: {credit_hours}</p>
                     </div>
                 </div>
-                <button onClick={()=>handleSelectBtn(courses)} className="w-full py-2 bg-[#2F80ED] rounded-xl text-white">Select</button>
+                <button onClick={() => handleSelectBtn(courses)} className="w-full py-2 bg-[#2F80ED] hover:bg-blue-400 rounded-xl text-white">Select</button>
             </div>
         </div>
     )
