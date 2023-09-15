@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Intro C Programming",
+        "title": "Intro to C Programming",
         "image": "https://i.imgur.com/jEt9pqk.png",
         "description": "Learn the basic of C programming. This course covers essential concepts and programming exercises to help you become proficient in C.",
         "price": 199.99,
