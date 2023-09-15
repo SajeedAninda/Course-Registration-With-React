@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "C Programming",
+        "title": "Intro C Programming",
         "image": "https://i.imgur.com/jEt9pqk.png",
         "description": "Learn the basic of C programming. This course covers essential concepts and programming exercises to help you become proficient in C.",
         "price": 199.99,
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "title": "Algorithms",
+        "title": "Intro to Algorithms",
         "image": "https://i.imgur.com/AFdSovk.png",
         "description": "Master algorithm design and analysis techniques. This course provides in-depth knowledge of various algorithms and their applications.",
         "price": 249.99,

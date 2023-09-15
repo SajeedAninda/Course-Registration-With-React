@@ -12,10 +12,10 @@ export default function CartDetails({ courseName, totalCreditHours, remainingCre
                     </ol>
                 </div>
                 <div className="py-4 border-b border-gray-300">
-                    <h3 className="text-[#1c1b1b99] font-medium">Total Credit Hours: {totalCreditHours}</h3>
+                    <h3 className="text-[#1c1b1bcc] font-medium">Total Credit Hours: {totalCreditHours}</h3>
                 </div>
                 <div className="py-4">
-                    <h3 className="text-[#1c1b1b99] font-bold">Total Price : {coursePrice} USD</h3>
+                    <h3 className="text-[#1c1b1bcc] font-bold">Total Price : {coursePrice} USD</h3>
                 </div>
             </div>
         </div>

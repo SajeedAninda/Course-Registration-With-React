@@ -19,7 +19,7 @@ export default function SingleCourse({ courses, handleSelectBtn }) {
                         <div className="text-xl text-[#1C1B1B]">
                             <HiOutlineBookOpen></HiOutlineBookOpen>
                         </div>
-                        <p className="text-sm">Credit: {credit_hours}</p>
+                        <p className="text-sm">Credit: {credit_hours}hr</p>
                     </div>
                 </div>
                 <button onClick={() => handleSelectBtn(courses)} className="w-full py-2 bg-[#2F80ED] hover:bg-blue-400 rounded-xl text-white">Select</button>
